@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+header h1{
+    font-size: 40px;
+    line-height: 1;
+}
+
+#unos-podataka {
+    width: 60vw;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cijena-box {
+    display: flex;
+    justify-content: center;
+    flex-basis: 40%;
+}
+
+input,
+#valuta {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#unos-naziva {
+    flex-basis: 45%;
+}
+#unos-cijene {
+    flex-basis: 70%;
+}
+
+#unos-naziva,
+#unos-cijene {
+    border: 1px solid gray;
+
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#unos-naziva:focus,
+#unos-cijene:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+#valuta {
+    display: inline-block;
+    background-color: lightgray;
+
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+#dodaj-film-button {
+    flex-basis: 15%;
+    color: white;
+    background-color: #0074d9;
+
+    border: none;
+    border-radius: 3px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    cursor: pointer;
+}
+
+#dodaj-film-button:hover {
+    background-color: #0158a5;
+}
+
+.input-error {
+    border-color: red !important;
+}
+
+
+
+#glavna-tablica {
+    width: 60vw;
+    border-collapse: collapse;
+}
+
+#glavna-tablica thead {
+    border-top: 1px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    text-align: left;
+}
+
+#glavna-tablica thead th,
+#glavna-tablica > tbody td {
+    padding: 10px 15px;
+}
+
+#glavna-tablica #prvi-stupac {
+    width: 15%;
+}
+
+#glavna-tablica #drugi-stupac {
+    width: 50%;
+}
+
+#glavna-tablica #treci-stupac {
+    width: 35%;
+}
+
+#glavna-tablica > tbody > tr:nth-child(odd) {
+    background-color: #E0E0E0;
+}
+
+#tablica-iznosa {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#tablica-iznosa tfoot {
+    border-top: 1px solid lightgray;
+    margin-top: 5px;
+}
+
+#tablica-iznosa td {
+    padding-bottom: 5px;
+}
+
+#tablica-iznosa tfoot td {
+    padding-top: 5px;
+}
+
+.drugi-stupac-podtablice {
+    width: 70%;
+    padding-right: 25%;
+    text-align: right;
+}
+
+#popust-row {
+    color: red;
+}
+
